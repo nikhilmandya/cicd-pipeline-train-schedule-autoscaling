@@ -20,7 +20,7 @@ metadata:
   labels:
     app: train-schedule
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: train-schedule
@@ -62,4 +62,4 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetAverageUtilization: 50
+      targetAverageUtilization: 5
